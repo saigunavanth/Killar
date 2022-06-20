@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'base/base.html' %}
+
+
+
+{% block bodycontent %}
+
+    <div class="container">
+        <h2>The sentiment analysis for user {{ username }} tweets: </h2>
+        <br>            
+                {% for pred in combine %}        
+                    <p style="text-align:left;">
+                    {{pred.0}}
+                    <span style="float:right;">
+                        {{pred.1}}
+                    </span>
+                </p>
+                {% endfor %}
+                <a href="{% url 'index'%}"><button type="button" class="btn btn-outline-dark">
+                    Go Back
+                </button></a>
+    </div>  
+
+
+{% endblock %}

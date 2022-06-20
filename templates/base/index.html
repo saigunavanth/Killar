@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'base/base.html' %}
+
+
+
+{% block bodycontent %}
+<div class="container">
+    <h2 >Enter the Username:</h2>
+    <br>
+    <form method="POST" >
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit"  class="btn btn-outline-primary">
+    </form>
+    
+    
+    <p style="margin-left: 50%;">{{ prediction }}<p>
+    </div>
+    
+
+
+
+{% endblock %}
