@@ -1,1 +1,1 @@
-web: gunicorn killar.wsgi --log-file -
+web:gunicorn killar.wsgi --log-file -
