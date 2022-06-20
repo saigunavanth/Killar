@@ -2,5 +2,4 @@ django==4.0.5
 tweepy==4.10.0
 pandas==1.4.2
 vadersentiment==3.3.2
-nltk
 regex
