@@ -1,1 +1,0 @@
-web:gunicorn killar.wsgi --log-file -
