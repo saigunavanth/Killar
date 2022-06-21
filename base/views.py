@@ -1,7 +1,6 @@
 from django.shortcuts import render
 import pandas as pd
 import re
-from nltk.corpus import words
 import tweepy
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from . import forms,models
